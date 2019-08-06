@@ -1,0 +1,155 @@
+// ! minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css
+
+/* html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0
+}
+ */
+
+//     html {
+//     box-sizing: border-box
+// }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  // outline: 1px solid red;
+}
+
+// button,
+// input,
+// select,
+// textarea {
+//     margin: 0
+// }
+//
+body {
+  font-family: Microsoft JhengHei;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  // you can enable it on the places you think appropriate
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+embed,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: center;
+}
+
+// input:focus
+*:focus {
+  // outline: none;
+  outline: 0;
+}
+
+// select:focus,
+// button:focus {
+//     outline: none;
+// }
+input {
+  border-radius: 0;
+  // -webkit-appearance: none;
+}
+
+input[type="date"] {
+  display: block;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  min-height: 1.2em;
+}
+
+button {
+  background: none;
+  border: none;
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+// select {
+//   -webkit-appearance: none;
+//   background: none;
+//   border: none;
+//   color: currentColor;
+// }
