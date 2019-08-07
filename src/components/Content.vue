@@ -83,7 +83,6 @@ export default {
       tool: false,
       plan: false
     };
-    console.log("this is content", now_page);
     switch (now_page) {
       case "index":
         page_control.index = true;
@@ -98,7 +97,6 @@ export default {
         page_control.plan = true;
         break;
     }
-    console.log({ page_control });
     return { page_control };
   }
 };

@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <transition></transition>
     <Header />
     <transition
       name="fade"

@@ -11,9 +11,7 @@
     <transition name="fade">
       <div class="modal" v-if="show">
         <div class="group_option">
-          <transition name="scale">
-            <i @click="show = !show"></i>
-          </transition>
+          <i @click="show = !show"></i>
           <router-link to="/" class="option" @click.native="show = !show">home</router-link>
           <router-link to="/intro" class="option" @click.native="show = !show">introduction</router-link>
           <router-link to="/tool" class="option" @click.native="show = !show">tool</router-link>
@@ -35,6 +33,7 @@ export default {
 
 <style lang="scss">
 header {
+  z-index: 2;
   position: fixed;
   top: 0;
   left: 0;
