@@ -106,6 +106,8 @@ export default {
 
 <style lang="scss">
 .page-index {
+  z-index: 0;
+
   section {
     // display: flex;
     width: 100%;
@@ -142,6 +144,7 @@ export default {
         }
 
         .txt {
+          z-index: 0;
           width: 450px;
           position: relative;
         }

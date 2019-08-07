@@ -51,7 +51,7 @@ header {
   }
   .btn {
     color: #aaa;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
       color: #fff;
@@ -60,6 +60,7 @@ header {
 }
 
 .modal {
+  z-index: 2;
   // display: none;
   display: flex;
   align-items: center;
@@ -70,7 +71,12 @@ header {
   background: rgba(0, 0, 0, 0.7);
 }
 
+.test {
+  background: #fff;
+}
+
 .group_option {
+  z-index: 2;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -83,6 +89,7 @@ header {
   border-radius: 10px;
 
   .option {
+    z-index: 4;
     width: 70%;
     height: 50px;
     margin: 0 0 20px;
@@ -90,7 +97,7 @@ header {
     font-size: 30px;
     text-align: center;
     color: #aaa;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
       transform: scale(1.1);
@@ -100,6 +107,7 @@ header {
   }
 
   i {
+    z-index: 3;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -107,7 +115,7 @@ header {
     height: 30px;
     background: url("../assets/icon/cancel.png") no-repeat;
     background-size: contain;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     &:hover {
       transform: scale(1.2);
     }
@@ -118,24 +126,24 @@ header {
   }
 }
 
-.scale-enter-active{
+.scale-enter-active {
   transition: test 0.5s;
 }
 
-.scale-leave-active{
+.scale-leave-active {
   transition: test 0.5s reverse;
 }
-@keyframes test{
-  0%{
+@keyframes test {
+  0% {
     transform: scale(0);
   }
-  100%{
+  100% {
     transform: scale(1.3);
   }
 }
 
-
-.scale-enter,.scale-leave-tp{
+.scale-enter,
+.scale-leave-tp {
   scale: 1;
 }
 
