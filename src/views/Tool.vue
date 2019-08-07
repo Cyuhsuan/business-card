@@ -2,7 +2,6 @@
   <div>
     <Banner :page="page" />
     <Content :page="page" />
-    <Footer />
   </div>
 </template>
 

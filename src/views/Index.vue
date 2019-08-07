@@ -1,23 +1,20 @@
 <template>
-  <div class="content">
-    <!-- <Header /> -->
+  <div>
     <Banner :page='page'/>
     <Content :page='page'/>
-    <Footer/>
+    <!-- <Contact /> -->
   </div>
 </template>
 <script>
-// import Header from "@/components/Header.vue";
 import Banner from "@/components/Banner.vue";
 import Content from "@/components/Content.vue";
-import Footer from "@/components/Footer.vue";
+import Contact from "@/components/Contaction.vue";
 export default {
   name: "index",
   components: {
-    // Header: Header,
     Banner: Banner,
     Content: Content,
-    Footer: Footer
+    Contact: Contact
   },
   data(){
       let page = "index";
@@ -26,10 +23,4 @@ export default {
 };
 </script>
 <style lang="scss">
-.content {
-  width: 100%;
-  height: 100vh;
-  // background: url("../assets/imgs/bg.jpg") no-repeat;
-  background-size: cover;
-}
 </style>

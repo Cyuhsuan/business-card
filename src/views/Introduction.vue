@@ -2,7 +2,7 @@
     <div>
         <Banner :page='page'/>
         <Content :page='page'/>
-        <Footer />
+        <!-- <Footer /> -->
     </div>
 </template>
 
