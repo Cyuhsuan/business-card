@@ -1,7 +1,12 @@
 <template>
   <div id="app">
     <Header />
-    <router-view></router-view>
+    <transition
+    name="fade"
+    mode="out-in"
+    >
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
@@ -9,8 +14,8 @@
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 export default {
-  components:{
-    Header:Header
+  components: {
+    Header: Header
   }
 };
 </script>
@@ -38,5 +43,16 @@ export default {
   .yallow {
     background: #f4da7a;
   }
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
 }
 </style>

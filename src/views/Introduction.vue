@@ -1,13 +1,12 @@
 <template>
-  <div class="content">
-    <!-- <Header /> -->
-    <Banner :page='page'/>
-    <Content :page='page'/>
-    <Footer/>
-  </div>
+    <div>
+        <Banner :page='page'/>
+        <Content :page='page'/>
+        <Footer />
+    </div>
 </template>
+
 <script>
-// import Header from "@/components/Header.vue";
 import Banner from "@/components/Banner.vue";
 import Content from "@/components/Content.vue";
 import Footer from "@/components/Footer.vue";
@@ -20,16 +19,12 @@ export default {
     Footer: Footer
   },
   data(){
-      let page = "index";
+      let page = "intro";
       return { page };
   }
 };
 </script>
+
 <style lang="scss">
-.content {
-  width: 100%;
-  height: 100vh;
-  // background: url("../assets/imgs/bg.jpg") no-repeat;
-  background-size: cover;
-}
+    
 </style>
