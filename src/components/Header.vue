@@ -11,11 +11,13 @@
     <transition name="fade">
       <div class="modal" v-if="show">
         <div class="group_option">
-          <i @click="show = !show"></i>
+          <transition name="scale">
+            <i @click="show = !show"></i>
+          </transition>
           <router-link to="/" class="option" @click.native="show = !show">home</router-link>
           <router-link to="/intro" class="option" @click.native="show = !show">introduction</router-link>
-          <div class="option">tool</div>
-          <div class="option">plan</div>
+          <router-link to="/tool" class="option" @click.native="show = !show">tool</router-link>
+          <router-link to="/plan" class="option" @click.native="show = !show">plan</router-link>
         </div>
       </div>
     </transition>
@@ -26,7 +28,7 @@
 export default {
   data() {
     let show = false;
-    return {show};
+    return { show };
   }
 };
 </script>
@@ -49,8 +51,9 @@ header {
   }
   .btn {
     color: #aaa;
+    transition: all .2s ease-in-out;
 
-    &:hover{
+    &:hover {
       color: #fff;
     }
   }
@@ -87,14 +90,16 @@ header {
     font-size: 30px;
     text-align: center;
     color: #aaa;
+    transition: all .2s ease-in-out;
 
     &:hover {
+      transform: scale(1.1);
       border-bottom: 1px solid #fff;
       color: #fff;
     }
   }
 
-  i{
+  i {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -102,13 +107,43 @@ header {
     height: 30px;
     background: url("../assets/icon/cancel.png") no-repeat;
     background-size: contain;
+    transition: all .2s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(1);
+    }
   }
 }
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .3s;
+
+.scale-enter-active{
+  transition: test 0.5s;
+}
+
+.scale-leave-active{
+  transition: test 0.5s reverse;
+}
+@keyframes test{
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1.3);
+  }
+}
+
+
+.scale-enter,.scale-leave-tp{
+  scale: 1;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
-
 </style>

@@ -19,10 +19,10 @@ export default {
         title = "this is intro";
         break;
       case "tool":
-        title = "this is index";
+        title = "this is tool";
         break;
       case "plan":
-        title = "this is index";
+        title = "this is plan";
         break;
     }
     return { title };
@@ -41,7 +41,6 @@ export default {
   justify-content: center;
   width: 100%;
   height: 60vh;
-  margin: 65px 0 0;
   background: rgba(99, 99, 99, 0.5);
 }
 

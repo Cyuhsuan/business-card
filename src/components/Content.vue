@@ -32,7 +32,7 @@
               Web pages can be created and modified by using professional HTML editors.
               Write HTML Using Notepad or TextEdit
               Web pages can be created and modified by using professional HTML editors.
-              <div class="more-btn">more</div>
+              <router-link to="/tool" class="more-btn">more</router-link>
             </div>
           </div>
         </div>
@@ -50,7 +50,7 @@
               Web pages can be created and modified by using professional HTML editors.
               Write HTML Using Notepad or TextEdit
               Web pages can be created and modified by using professional HTML editors.
-              <div class="more-btn">more</div>
+              <router-link to="/plan" class="more-btn">more</router-link>
             </div>
           </div>
         </div>
@@ -166,6 +166,11 @@ export default {
       width: 70px;
       border: 1px solid black;
       text-align: center;
+      transition: all 0.2s ease-in-out;
+
+      &:active {
+        transform: scale(0.9);
+      }
     }
 
     .contrary {

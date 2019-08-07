@@ -2,6 +2,8 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Index.vue";
 import Intro from "./views/Introduction.vue";
+import Tool from "./views/Tool.vue";
+import Plan from "./views/Plan.vue";
 
 Vue.use(Router);
 
@@ -15,6 +17,16 @@ export default new Router({
       path: "/intro",
       name: "Intro",
       component: Intro
+    },
+    {
+      path: "/tool",
+      name: "tool",
+      component: Tool
+    },
+    {
+      path: "/plan",
+      name: "plan",
+      component: Plan
     },
     {
       path: "/about",

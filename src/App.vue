@@ -1,12 +1,10 @@
 <template>
   <div id="app">
     <Header />
-    <transition
-    name="fade"
-    mode="out-in"
-    >
+    <transition name="fade" mode="out-in">
       <router-view></router-view>
     </transition>
+    <!-- <Footer /> -->
   </div>
 </template>
 
@@ -15,7 +13,8 @@ import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 export default {
   components: {
-    Header: Header
+    Header: Header,
+    Footer: Footer
   }
 };
 </script>
@@ -44,6 +43,9 @@ export default {
     background: #f4da7a;
   }
 }
+body{
+  padding: 65px 0 0;
+}
 .fade-enter-active,
 .fade-leave-active {
   transition-duration: 0.3s;
@@ -53,6 +55,6 @@ export default {
 
 .fade-enter,
 .fade-leave-active {
-  opacity: 0
+  opacity: 0;
 }
 </style>

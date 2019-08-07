@@ -33,7 +33,7 @@ footer {
     }
 
     .fb{
-      background: url("../assets/icon/fb2.png") no-repeat;
+      background: url("../assets/icon/fb.png") no-repeat;
       background-size: contain;
     }
     .ig{
