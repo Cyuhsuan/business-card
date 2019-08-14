@@ -2,13 +2,13 @@
   <footer>
     <div>
       <div class="group">
-        <a href class="icon fb-icon">
+        <a href="https://www.facebook.com/profile.php?id=100002505830499" class="icon">
           <div class="fb"></div>
         </a>
-        <a href class="icon">
+        <a href="https://www.instagram.com/chang_yu_hsan/" class="icon">
           <div class="ig"></div>
         </a>
-        <a href class="icon">
+        <a href="https://line.me/ti/p/bTEbQHeA2a" class="icon">
           <div class="line"></div>
         </a>
       </div>
@@ -18,6 +18,7 @@
         <router-link to="/tool">tool</router-link> |
         <router-link to="/plan">plan</router-link>
       </div>
+      <p class="mail">x89301089@gmail.com</p>
     </div>
   </footer>
 </template>
@@ -55,29 +56,34 @@ footer {
     }
 
     .fb {
-      width: 45px;
-      height: 45px;
-      background: url("../assets/icon/fb2.png") no-repeat;
+      width: 50px;
+      height: 50px;
+      background: url("../assets/icon/fb_b.png") no-repeat;
       background-size: contain;
     }
     .ig {
       width: 50px;
       height: 50px;
-      background: url("../assets/icon/ig_b.png") no-repeat;
+      background: url("../assets/icon/ig_r.png") no-repeat;
       background-size: cover;
     }
     .line {
-      position: absolute;
-      top: -5px;
-      left: -5px;
-      width: 60px;
-      height: 60px;
-      background: url("../assets/icon/line_b.png") no-repeat;
+      // position: absolute;
+      // top: -5px;
+      // left: -5px;
+      width: 50px;
+      height: 50px;
+      background: url("../assets/icon/line_g.png") no-repeat;
       background-size: cover;
     }
   }
 
   .footer_href{
+    color: #fff;
+  }
+
+  .mail{
+    text-align: center;
     color: #fff;
   }
 }

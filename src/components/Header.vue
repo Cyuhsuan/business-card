@@ -1,10 +1,11 @@
 <template>
   <div>
     <header>
-      <router-link to="/" class="title">yuHsuanC</router-link>
+      <router-link to="/" class="title">
+      <div class="name">YuHsuan's</div>
+        Blog
+      </router-link>
       <div class="group">
-        <div class="btn"></div>
-        <div class="btn"></div>
         <div class="btn" @click="show = !show">menu</div>
       </div>
     </header>
@@ -45,14 +46,30 @@ header {
   padding: 0 20px;
   background: #000;
   .title {
+    display: flex;
+    align-items: center;
     font-size: 35px;
     color: #fff;
+
+    .name{
+      display: flex;
+      align-items: center;
+      height: 35px;
+      padding: 0 5px;
+      margin: 0 10px 0 0;
+      color: #000;
+      background: #fff;
+      border-radius: 3px;
+    }
   }
   .btn {
+    padding: 0 0 0 10px;
+    border-left: 2px solid #aaa;
     color: #aaa;
     transition: all 0.2s ease-in-out;
 
     &:hover {
+      cursor:pointer;
       color: #fff;
     }
   }
@@ -81,8 +98,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  height: 500px;
+  width: 35vw;
+  height: 70vh;
   background: #222;
   border: 2px solid #fff;
   border-radius: 10px;
@@ -152,5 +169,11 @@ header {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .group_option{
+    width: 70vw;
+  }
 }
 </style>
