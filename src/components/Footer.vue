@@ -5,7 +5,7 @@
         <a href="https://www.facebook.com/profile.php?id=100002505830499" class="icon">
           <div class="fb"></div>
         </a>
-        <a href="https://www.instagram.com/chang_yu_hsan/" class="icon">
+        <a href="https://www.instagram.com/rain__hsuan/" class="icon">
           <div class="ig"></div>
         </a>
         <a href="https://line.me/ti/p/bTEbQHeA2a" class="icon">
